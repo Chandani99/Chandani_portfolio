@@ -49,8 +49,8 @@
                         <li><a class="page-scroll" href="#services">Passion</a></li>
                         <li><a class="page-scroll" href="#experience">Experience</a></li>
                         <li><a class="page-scroll" href="#portfolio">Projects</a></li>
-                        <!-- <li><a class="page-scroll" href="Chandani_fw17_0130_Resume.pdf"  target="_blank" download ="Resume" id = "pdf-link">Resume</a></li> -->
-                        <li><a class="page-scroll" href="Chandani_fw17_0130_Resume.pdf" id = "pdf-link">Resume</a></li>
+                        <li><a class="page-scroll" href="Chandani_fw17_0130_Resume.pdf"  target="_blank" download ="Resume" id = "pdf-link">Resume</a></li>
+                        <!-- <li><a class="page-scroll" href="Chandani_fw17_0130_Resume.pdf" id = "pdf-link">Resume</a></li> -->
                         <li><a class="page-scroll" href="#contact">Contact</a></li> 
                     </ul>
                 </div>
@@ -441,20 +441,20 @@
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
         <script>
-            const link = document.getElementById('pdf-link');
-            link.addEventListener('click', function(event) {
-                  event.preventDefault();
-                  const pdfUrl = this.getAttribute('href');
-                  const windowName = 'PDF Download';
-                  const windowFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
-                  const downloadFrame = document.createElement('iframe');
-                  downloadFrame.setAttribute('src', pdfUrl);
-                  downloadFrame.setAttribute('style', 'display: none;');
-                  document.body.appendChild(downloadFrame);
-                  const downloadWindow = window.open(pdfUrl, windowName, windowFeatures);
-                  downloadWindow.document.write('<body onload="self.focus();self.print();self.close();"></body>');
-                  document.body.removeChild(downloadFrame);
-            });
+            // const link = document.getElementById('pdf-link');
+            // link.addEventListener('click', function(event) {
+            //       event.preventDefault();
+            //       const pdfUrl = this.getAttribute('href');
+            //       const windowName = 'PDF Download';
+            //       const windowFeatures = 'width=800,height=600,scrollbars=yes,resizable=yes';
+            //       const downloadFrame = document.createElement('iframe');
+            //       downloadFrame.setAttribute('src', pdfUrl);
+            //       downloadFrame.setAttribute('style', 'display: none;');
+            //       document.body.appendChild(downloadFrame);
+            //       const downloadWindow = window.open(pdfUrl, windowName, windowFeatures);
+            //       downloadWindow.document.write('<body onload="self.focus();self.print();self.close();"></body>');
+            //       document.body.removeChild(downloadFrame);
+            // });
         </script>
         <!-- *********************************************
          _   _              _   _                   _
